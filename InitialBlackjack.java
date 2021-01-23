@@ -1,7 +1,6 @@
 import java.util.*;
-import javax.swing.*;
 
-public class InitialBlackjack extends JFrame{
+public class InitialBlackjack{
     private int balance = 1000;
     private int bet;
     private ArrayList<Card> myCards;
@@ -10,9 +9,7 @@ public class InitialBlackjack extends JFrame{
     private Deck dCards = new Deck();
     private Scanner scn = new Scanner(System.in);
     
-    public void initialize(){
-        setVisible(true);
-        
+    public void initialize(){        
         resetCards();
     }
 
@@ -90,7 +87,7 @@ public class InitialBlackjack extends JFrame{
         System.out.println("\nDealer's cards:");
         for(Card cd : dHand)
             System.out.println(cd);
-        System.out.println("\n\n\n");
+        System.out.println("\n\n");
         resetCards();
 
     }
